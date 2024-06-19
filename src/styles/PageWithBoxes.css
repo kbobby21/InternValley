@@ -1,0 +1,56 @@
+/* PageWithBoxes.css */
+
+.boxes-container {
+  padding: 80px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+
+  background-color: #f1e5f9;
+}
+
+.box {
+  width: 20%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px dotted #b16ee1;
+}
+.box:hover {
+  background-color: #b16ee1;
+}
+.box:hover h2 {
+  color: #ffffff;
+}
+.box:hover h3 {
+  color: #ffffff;
+}
+
+.box h2 {
+  font-size: 44px;
+  margin-bottom: 10px;
+  margin-top: -1px;
+  color: #b16ee1;
+}
+.box h3 {
+  text-align: center;
+  color: #b16ee1;
+  font-size: 25px;
+}
+
+.box p {
+  font-size: 15px;
+  color: #060606;
+  text-align: center;
+}
+
+/* Media Query for Responsive Layout */
+
+@media (max-width: 768px) {
+  .box {
+    width: 100%;
+  }
+}

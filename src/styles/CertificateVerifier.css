@@ -1,0 +1,96 @@
+.certificate-verify-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 63px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+
+.verify-container {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: right;
+  padding: 0 4px;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #b16ee1;
+  color: #fff;
+  border: 1px solid #b16ee1;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.Loader {
+  text-align: center;
+}
+.verified {
+  color: rgb(13, 100, 28);
+}
+.button-container {
+  margin-left: -4px;
+}
+
+.result-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.result-container p {
+  font-size: 18px;
+  color: #333;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  th,
+  td {
+    padding: 8px 10px;
+  }
+  input {
+    width: 80%;
+  }
+}

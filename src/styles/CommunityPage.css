@@ -1,0 +1,46 @@
+/* CommunityPage.css */
+
+.community-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #f1e5f9;
+  max-width: 90%;
+  margin: 0px auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  border: 1px solid rgb(191, 183, 183);
+}
+
+.community-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stat {
+  margin: 0px 20px;
+  padding: 5px 20px;
+  /* background-color: #f0f0f0; */
+  border-radius: 10px;
+}
+
+.stat h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.stat p {
+  font-size: 18px;
+  color: #666;
+}
+.pop {
+  color: #b16ee1;
+  filter: drop-shadow(1px 1px 1px rgb(4, 4, 4));
+}
+
+@media (max-width: 480px) {
+  .community-container {
+    max-width: 80%;
+  }
+}

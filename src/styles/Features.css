@@ -1,0 +1,53 @@
+/* Features.css */
+
+.features-container {
+  padding: 10px 0px;
+  text-align: center;
+  background-color: #f1e5f9;
+  /* max-width: 90%; */
+  /* margin: 0px auto; */
+  /* border-radius: 10px; */
+  /* margin-top: 20px; */
+  /* border: 1px solid rgb(191, 183, 183); */
+}
+.feature {
+  width: 42%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: top;
+  border: 1px dotted #b16ee1;
+}
+.feature:hover {
+  background-color: #b16ee1;
+}
+.feature:hover h3 {
+  color: rgb(255, 255, 255);
+}
+.feature h3 {
+  color: #b16ee1;
+}
+/* .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 18px;
+    color: #666;
+  } */
+
+/* Media Query for Responsive Layout */
+
+@media (max-width: 768px) {
+  .feature {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .feature {
+    width: 80%;
+  }
+}

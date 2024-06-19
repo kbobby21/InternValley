@@ -1,0 +1,58 @@
+/* Reviews.css */
+
+.all-places-packages {
+  padding: 20px;
+  /* background-color: rgb(207, 231, 241); */
+  border-radius: 10px;
+  background: #f1e5f9;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px; /* Adjust card width as needed */
+  width: 100%;
+}
+
+.review-title {
+  text-align: center;
+}
+.user {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stars {
+  color: #fdd835; /* Yellow color for stars */
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.comment {
+  font-style: italic;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  .review {
+    width: calc(20% - 20px); /* Show 5 cards in a row */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review {
+    width: 100%; /* Show one card per row */
+  }
+}

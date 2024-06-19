@@ -1,0 +1,111 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://ucarecdn.com/1479a978-c30d-467f-8226-411f7d2383c0/-/preview/1000x667/");
+  background-size: cover;
+  /* padding: 50px; */
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 60px; */
+}
+.hero-section::before {
+  position: absolute;
+  content: "";
+  background-image: linear-gradient(120deg, rgba(230, 225, 220, 1), #b16ee1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.94;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 60%;
+  margin-left: 10%;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 40%;
+  margin-left: 20px;
+  animation: slideLeftRight 2s ease-in-out infinite alternate;
+}
+
+@keyframes slideLeftRight {
+  0% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.auto-text {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-main {
+  background-color: #9500ff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: #f3f7fa;
+  color: #9500ff;
+}
+
+.hero-image img {
+  width: 80%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  margin-top: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 14%;
+    margin-bottom: 5%;
+    padding: 30px 0;
+    height: 70vh;
+  }
+
+  .hero-image {
+    max-width: 70%;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 20%;
+  }
+
+  .btn-main {
+    margin-top: 20px;
+  }
+}
