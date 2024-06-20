@@ -1,6 +1,6 @@
 {
-  "name": "CampusValley",
-  "short_name": "CampusValley",
+  "name": "InternValley",
+  "short_name": "InternValley",
   "description": "Your Ultimate Campus Experience",
   "start_url": "/",
   "display": "standalone",
@@ -23,5 +23,4 @@
       "sizes": "512x512"
     }
   ]
-
 }
